@@ -3,7 +3,7 @@
 // // const anotherString = "I am another String"
 
 
- const H1 = document.getElementById('greeting');
+const H1 = document.getElementById('greeting');
 
 
 // // function checkExamples() {
@@ -89,26 +89,27 @@
 
 //switch statements
 
-const askColor = prompt("Pick a color:  Red, Blue, Orange");
-
+const askColor = prompt("Pick a color:  Red, Blue, Orange").toUpperCase();
+console.log (askColor);
 
 switch (askColor) {
-  case 'Red':
+  case 'RED':
     console.log("The color is Red");
     H1.innerHTML = "You choosed color red";
     break;
 
-  case 'Blue':
+  case 'BLUE':
     console.log("The color is Blue");
     H1.innerHTML = "You choosed color Blue";
     break;
 
-  case 'Orange':
+  case 'ORANGE':
     console.log("The color is Orange");
     H1.innerHTML = "You choosed color Orange";
     break;
 
-default:
-  console.log("None are here");
+  default:
+      H1.innerHTML = "Sorry, your selection is not here";
+    console.log("None are here");
 
 }
