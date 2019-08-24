@@ -64,53 +64,53 @@
 // console.log(newArrayOfInfo);
 
 
-// let arrayOne = [
-//     'The Matrix', 'Neo'
-// ]
-// let arrayTwo = [
-//     'Batman', 'Bruce Wayne'
-// ]
-// let arrayThree = [
-//     'Lion King', 'Simba'
-// ]
+let arrayOne = [
+    'The Matrix', 'Neo'
+]
+let arrayTwo = [
+    'Batman', 'Bruce Wayne'
+]
+let arrayThree = [
+    'Lion King', 'Simba'
+]
 
-// let arrayFour = [
-//     'Titanic', 'Rose'
-// ]
+let arrayFour = [
+    'Titanic', 'Rose'
+]
 
-// let arrayFive = [
-//     'Moana', 'The Rock'
-// ]
+let arrayFive = [
+    'Moana', 'The Rock'
+]
 
-// let favoriteMovies = [
-//     arrayOne[0], 
-//     arrayTwo[0], 
-//     arrayThree[0], 
-//     arrayFour[0], 
-//     arrayFive[0]
+let favoriteMovies = [
+    arrayOne[0], 
+    arrayTwo[0], 
+    arrayThree[0], 
+    arrayFour[0], 
+    arrayFive[0]
 
 
-// ]
+]
 
-// alert(favoriteMovies.indexOf[0];
+alert(favoriteMovies);
 
 
     //Loops understanding
 
-    let x = 0;
+    // let x = 0;
 
-    while (x <= 10){
+    // while (x <= 10){
 
-        console.log(x);
-        x++;
-    }
+    //     console.log(x);
+    //     x++;
+    // }
 
 
-    //for loop
+    // //for loop
 
-    for (let i = 0; i < 20; i++){
-        console.log(i);
-    }
+    // for (let i = 0; i < 20; i++){
+    //     console.log(i);
+    // }
 
 
     // for (let i = 10; i < 0; i--){
@@ -151,16 +151,16 @@
 //for end
 
 
-let people = {
+// let people = {
 
-firstName: 'Jason',
-LastName: 'Cardona'
+// firstName: 'Jason',
+// LastName: 'Cardona'
 
-}
-
-
+// }
 
 
-for (i in people){
-    console.log(people[i]);
-}
+
+
+// for (i in people){
+//     console.log(people[i]);
+// }
