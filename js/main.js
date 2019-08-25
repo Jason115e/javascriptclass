@@ -7,7 +7,7 @@ procees1.addEventListener('click', function(e){
 
 if(!questionasked == NaN){
     
-}
+}d
 
 
 });
