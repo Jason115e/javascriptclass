@@ -38,3 +38,57 @@
 
 
 
+
+// let names = [
+// 'Jason', 'Jaime', 'Scarlet'
+
+// ];
+
+// const greetings = name => `Good Evening, ${name}`;
+
+// console.log(`The array of names ${names}`, `greeting function value ${greetings('Example')}`);
+
+
+// const limit = 3;
+
+
+// for (j = 0; j < limit; j++){
+
+// console.log(greetings(names[j]));
+
+const h1 = document.getElementById('greeting');
+const myList = document.getElementById('groceryList');
+const listItem = document.getElementById('groceryItem');
+const myInput = document.getElementById('getGroceryItem');
+
+
+let arrayOfGroceryItems = [];
+
+h1.innerHTML = "Jason Grocery listes";
+
+//creat function to add onto grocery list
+
+const addGroceryItem = (arr, value) => arr.push(value);
+
+
+//parent function
+// call in the baby functions
+
+function addGroceryItemsAndDisplay(arr, value){
+
+arr.push(value);
+
+}
+
+function ejectGroceryItemToList(val){
+
+
+//grab list item
+//goal push array items to list
+groceryItem.innerHTML = val;
+for(grocey = 0; grocery < arrayOfGroceryItems.length; grocery++);
+
+
+}
+
+addGroceryItem(arrayOfGroceryItems, 'Test');
