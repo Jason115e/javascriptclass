@@ -1,77 +1,53 @@
-const userName = prompt("What is your name : ");
-const favColor = prompt("What is your favorite color: Red, Orange, Yellow, Green, Blue, Pink, Purple, Black, White, Grey : ").toUpperCase();
-const H1 = document.getElementById("msg");
+const h1 = document.getElementById('greeting');
+const myList = document.getElementById('groceryList');
 
-switch (favColor) {
-  case 'RED':
+const myInput = document.getElementById('getGroceryItem');
 
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
- 
-    break;
+h1.innerHTML = "Jason's Grocery List";
 
-  case 'ORANGE':
+//Start with a blank array
+let allGroceryItems = [];
 
 
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
 
-    break;
+//document is listening to the click button
+function addToList() {
 
-  case 'YELLOW':
-
-
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
-
-    break;
-
-  case 'GREEN':
+//if the textbox is not empty then do the following
+    if (!myInput.value == "") {
 
 
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
+        
+  
+      
+       
+        allGroceryItems.push(myInput.value);
 
-    break;
+        for(i=0; i < allGroceryItems.length; i++){
 
-  case 'BLUE':
+            
+            let listItem = document.getElementById(`groceryItem${i+1}`);
+            listItem.innerHTML = `# ${i+1}: ${allGroceryItems[i]}`;
 
+      
+         
 
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
-
-    break;
-
-  case 'PINK':
-
-
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
-
-    break;
-
-  case 'PURPLE':
+        }
+   
 
 
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
-
-    break;
-
-  case 'BLACK':
 
 
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
 
-    break;
-  case 'WHITE':
+        //clear form textbox
+        myInput.value = "";
 
+    } else {
 
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
-
-    break;
-  case 'GREY':
+//if the textbox is empty then do the following = clear the box.
 
 
-    H1.innerHTML = (`${userName}, You have selected the following color: ${favColor.toLowerCase()}`);
+        //clear form textbox
+        myInput.value = "";
+    }
 
-    break;
-
-
-  default:
-    console.log(`Sorry ${userName}, that is an invalid color`);
-
-}

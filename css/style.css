@@ -1,0 +1,32 @@
+<<<<<<< HEAD
+=======
+body {
+  background: skyblue;
+  min-width: 100vh;
+}
+
+main {
+  min-height: 100vh;
+  color:#333;
+  padding: 0.5em;
+
+}
+
+section {
+  background: white;
+  color: black;
+  padding:0.5em;
+}
+
+
+ul, li {
+
+list-style: none;
+
+}
+
+li::before{
+  content: '- ';
+  font-weight: bold;
+}
+>>>>>>> mergeFinal
