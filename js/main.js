@@ -3,7 +3,7 @@ const myList = document.getElementById('groceryList');
 
 const myInput = document.getElementById('getGroceryItem');
 
-h1.innerHTML = "Jason Grocery List";
+h1.innerHTML = "Jason's Grocery List";
 
 //Start with a blank array
 let allGroceryItems = [];
@@ -13,7 +13,7 @@ let allGroceryItems = [];
 //document is listening to the click button
 function addToList() {
 
-
+//if the textbox is not empty then do the following
     if (!myInput.value == "") {
 
 
@@ -27,7 +27,7 @@ function addToList() {
 
             
             let listItem = document.getElementById(`groceryItem${i+1}`);
-            listItem.innerHTML = allGroceryItems[i];
+            listItem.innerHTML = `# ${i+1}: ${allGroceryItems[i]}`;
 
       
          
@@ -44,7 +44,7 @@ function addToList() {
 
     } else {
 
-
+//if the textbox is empty then do the following = clear the box.
 
 
         //clear form textbox
