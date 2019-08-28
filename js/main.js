@@ -13,27 +13,27 @@ let allGroceryItems = [];
 //document is listening to the click button
 function addToList() {
 
-//if the textbox is not empty then do the following
+    //if the textbox is not empty then do the following
     if (!myInput.value == "") {
 
 
-        
-  
-      
-       
+
+
+
+
         allGroceryItems.push(myInput.value);
 
-        for(i=0; i < allGroceryItems.length; i++){
+        for (i = 0; i < allGroceryItems.length; i++) {
 
-            
+
             let listItem = document.getElementById(`groceryItem${i+1}`);
             listItem.innerHTML = `# ${i+1}: ${allGroceryItems[i]}`;
 
-      
-         
+
+
 
         }
-   
+
 
 
 
@@ -44,7 +44,7 @@ function addToList() {
 
     } else {
 
-//if the textbox is empty then do the following = clear the box.
+        //if the textbox is empty then do the following = clear the box.
 
 
         //clear form textbox
