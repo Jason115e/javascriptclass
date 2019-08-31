@@ -1,5 +1,48 @@
 body {
     margin:0 auto;
-    width:600px;
+    width:95%;
     text-align: center;
+    margin-top:100px;
+    background:rgb(30, 156, 150);
+    font-family: 'Raleway', sans-serif;
+    
 }
+
+main{
+
+
+    background:white;
+    padding:25px;
+
+
+}
+
+input{
+    width:100%;
+    text-align: center;
+   font-size:1.2em;
+   background:rgb(230, 230, 230);
+   padding:10px;
+
+}
+button{
+    width:50%;
+    float:left;
+    padding:15px 0;
+    font-size:1em;
+}
+
+button:hover{
+    background:rgb(30, 137, 187);
+    color:white;
+}
+
+h1 {
+    margin:25px 0;
+}
+
+h3 {
+   color:red;
+   font-size:1em;
+}
+

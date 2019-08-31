@@ -7,6 +7,7 @@
   <title>Document</title>
    <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -15,12 +16,13 @@
 
 
     
-    <h1 id="greeting">Fahrenheit / Celcius Converter</h1>
-  <input id="degreeInput" placeholder="Enter Degree"></input>
-  <button class="selectionFahrenheit">Fahrenheit</button>
-  <button class="selectionCelcius" >Celcius</button>
+  <h1 id="greeting">Degree Converter</h1>
+  <input id="degreeInput" placeholder="Enter Degrees"></input>
+  <button id="selectionFahrenheit">Fahrenheit -> Celcius</button>
+  <button id="selectionCelcius" >Celcius -> Fahrenheit</button>
   
   <input disabled="disabled" id="degreeOutput"></input>
+  <h3 id="errormessage"></h3>
 
   </main>
 
@@ -29,3 +31,5 @@
   <script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>
+
+
