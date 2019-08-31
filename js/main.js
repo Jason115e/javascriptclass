@@ -1,54 +1,31 @@
-const h1 = document.getElementById('greeting');
-const myList = document.getElementById('groceryList');
-
-const myInput = document.getElementById('getGroceryItem');
-
-h1.innerHTML = "Jason's Grocery List";
-
-//Start with a blank array
-let allGroceryItems = [];
+const userInputDegree = document.getElementById("degreeInput");
+const userDegreeOutput = document.getElementById("degreeOutput");
+const buttonFahrenheit = document.getElementById("selectionFahrenheit");
+const buttonCelcius = document.getElementById("selectionCelcius");
+const errorMessage = document.getElementById('errormessage');
 
 
 
-//document is listening to the click button
-function addToList() {
-
-    //if the textbox is not empty then do the following
-    if (!myInput.value == "") {
-
-
-
-
-
-
-        allGroceryItems.push(myInput.value);
-
-        for (i = 0; i < allGroceryItems.length; i++) {
-
-
-            let listItem = document.getElementById(`groceryItem${i+1}`);
-            listItem.innerHTML = `# ${i+1}: ${allGroceryItems[i]}`;
-
-
-
-
-        }
-
-
-
-
-
-
-        //clear form textbox
-        myInput.value = "";
-
+buttonFahrenheit.addEventListener('click', () => {
+    let numberisNumber = isNaN(userInputDegree.value);
+    if (!numberisNumber) {
+        console.log("is a number");
+        userDegreeOutput.value = `Celcius: ${parseFloat((userInputDegree.value - 32) * 5/9).toFixed(2)} `;
+        errorMessage.innerHTML = "";
     } else {
-
-        //if the textbox is empty then do the following = clear the box.
-
-
-        //clear form textbox
-        myInput.value = "";
+        console.log("Is not a number");
+        errorMessage.innerHTML = "Please enter an actual number!";
     }
+});
+buttonCelcius.addEventListener('click', () => {
+    let numberisNumber = isNaN(userInputDegree.value);
+    if (!numberisNumber) {
+        console.log("is a number");
+        userDegreeOutput.value = `Fahrenheit: ${parseFloat((userInputDegree.value * 9/5) + 32).toFixed(2)} `;
+        errorMessage.innerHTML = "";
+    } else {
+        console.log("Is not a number");
+        errorMessage.innerHTML = "Please enter an actual number!";
+    }
+});
 
-}
