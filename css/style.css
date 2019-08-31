@@ -30,6 +30,7 @@ button{
     float:left;
     padding:15px 0;
     font-size:1em;
+    -webkit-appearance:none;
 }
 
 button:hover{
