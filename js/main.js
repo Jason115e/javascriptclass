@@ -1,31 +1,36 @@
-const userInputDegree = document.getElementById("degreeInput");
+const userInputDegree = document.querySelector('#degreeInput');
 const userDegreeOutput = document.getElementById("degreeOutput");
-const buttonFahrenheit = document.getElementById("selectionFahrenheit");
-const buttonCelcius = document.getElementById("selectionCelcius");
-const errorMessage = document.getElementById('errormessage');
+const errorMessage = document.getElementById("errormessage");
+const buttonSelect = document.querySelectorAll('button');
+const buttons = document.querySelectorAll(".select");
+for (i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', () => {
+        checkInputField();
+    });
+};
 
-
-
-buttonFahrenheit.addEventListener('click', () => {
-    let numberisNumber = isNaN(userInputDegree.value);
-    if (!numberisNumber) {
-        console.log("is a number");
-        userDegreeOutput.value = `Celcius: ${parseFloat((userInputDegree.value - 32) * 5/9).toFixed(2)} `;
-        errorMessage.innerHTML = "";
+function checkInputField() {
+    let newFormatInput = isNaN(userInputDegree.value);
+    if (newFormatInput == false && !userInputDegree.value == "") {
+        userInputDegree.value = "";
+        userDegreeOutput.value = "";
+        startRace();
     } else {
-        console.log("Is not a number");
-        errorMessage.innerHTML = "Please enter an actual number!";
+        userDegreeOutput.value = "Nope, not going to try and converting this.";
+        userInputDegree.value = "";
     }
-});
-buttonCelcius.addEventListener('click', () => {
-    let numberisNumber = isNaN(userInputDegree.value);
-    if (!numberisNumber) {
-        console.log("is a number");
-        userDegreeOutput.value = `Fahrenheit: ${parseFloat((userInputDegree.value * 9/5) + 32).toFixed(2)} `;
-        errorMessage.innerHTML = "";
-    } else {
-        console.log("Is not a number");
-        errorMessage.innerHTML = "Please enter an actual number!";
-    }
-});
+}
 
+function startRace() {
+
+
+    if (this.selectionFahrenheit == ){
+        console.log("fah");
+
+
+    }
+
+
+
+
+}
