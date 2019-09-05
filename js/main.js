@@ -24,11 +24,20 @@ function checkInputField() {
 function startRace() {
 
 
-    if (this.selectionFahrenheit == ){
-        console.log("fah");
+if
 
 
-    }
+    // if (this.selectionFahrenheit.clicked){
+    //     console.log("fah");
+
+
+    // }
+
+    // if (this.selectionCelcius){
+    //     console.log("CEL");
+
+
+    // }
 
 
 
