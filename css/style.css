@@ -1,0 +1,11 @@
+body, .row{
+    background-color: aquamarine;
+}
+
+.content{
+    background: snow;
+    padding:1em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    max-height:60vh;
+}
