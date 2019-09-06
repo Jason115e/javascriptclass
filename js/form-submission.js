@@ -1,1 +1,0 @@
-log('You have reached this page');
