@@ -19,18 +19,30 @@ function superAwesomeFunction() {
 function formCreation() {
     let container = document.getElementById('container');
     let form = inputCreation('form', '', 'formName', 'GET', 'js/formSubmission.js', 'inputform', '', '');
-    let inputName = inputCreation('input', 'name', 'name', '', '', '', '', '');
-    let inputEmail = inputCreation('input', 'email', 'email', '', '', '', '', '');
-    let button = inputCreation('button', 'submit', 'submit', '', '', '', '', 'Submit Entry');
+    let inputName = inputCreation('input', 'name', 'name', '', '', 'form-control', '', '');
+    let inputEmail = inputCreation('input', 'email', 'email', '', '', 'form-control', '', '');
+    let textArea = inputCreation('textarea', 'text', 'textarea', '', '', 'form-control', '', '');
+    let button = inputCreation('button', 'submit', 'submit', '', '', '', '', 'Submit');
+    let formGroupName = inputCreation('div', '', '', '', '', 'form-group', '', '');
+    let formGroupEmail = inputCreation('div', '', '', '', '', 'form-group', '', '');
     
 
     container.appendChild(form);
+
+    form.appendChild(formGroupName);
     
-    form.appendChild(labelCreation('name', 'Name:'));
-    form.appendChild(inputName);
+    formGroupName.appendChild(labelCreation('name', 'Name:'));
+    formGroupName.appendChild(inputName);
+
+
+    form.appendChild(formGroupEmail);
     
-    form.appendChild(labelCreation('email', 'Email:'));
-    form.appendChild(inputEmail);
+    formGroupEmail.appendChild(labelCreation('email', 'Email:'));
+    formGroupEmail.appendChild(inputEmail);
+
+
+    formGroupEmail.appendChild(textArea);
+
     form.appendChild(button);
 
 
