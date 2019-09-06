@@ -2,42 +2,25 @@ body {
     width:100%;
     background: rgb(12, 88, 150);
     font-family: 'Raleway', sans-serif;
-
-
 }
-
 main{
-
-
     background:white;
     padding:25px;
-
-
 .inputform {
-
-
     margin: auto;
     width:75vw;
     text-align: center;
     color: white;
-   
     font-size: 1.5em;
-   
-
 }
-
 input {
     width: 100%;
     border-radius: 8px;
     text-align: center;
-    
 }
-
 textarea{
     margin-top:10px;
-   
 }
-
 button {
     padding:0px 15px;
     -webkit-appearance: none;
@@ -45,23 +28,16 @@ button {
     margin-top: 10px;
     border-radius: 10px;
     color: rgb(12, 88, 150);
-    transition:background 250ms ease-in-out;
-
+    transition:all 250ms ease-in-out;
 }
-
 button:hover {
     background: rgb(12, 88, 150);
     color: white;
-    
-    transition:background 250ms ease-in-out;
-    
+    transition:all 250ms ease-in-out;
 }
-
-
 body{
     height:100vh;
     display: flex;
-  
     align-items: center;
     justify-content: center;
     background-size: cover;
@@ -69,21 +45,13 @@ body{
     flex-direction: row;
     background-attachment: fixed;
 }
-
 #startButton{
     overflow:hidden;
     width:50%;
     height: 20%;
     border:2px solid white;
     font-size: 2em;
-
-    
-    
 }
-
-
 .hidden {
-    
-    
     display:none;
 }
