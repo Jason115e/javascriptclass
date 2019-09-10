@@ -8,7 +8,7 @@ function superAwesomeFunction() {
 //<input type="" name="" class="" placeholder="" / elementInnerText for Button>
 function formCreation() {
     let container = document.getElementById('container');
-    let form = inputCreation('form', '', 'formName', 'GET', 'js/formSubmission.js', 'inputform', '', '');
+    let form = inputCreation('form', '', 'formName', 'GET', 'js/form-submission.js', 'inputform', '', '');
     let inputName = inputCreation('input', 'text', 'name', '', '', 'form-control', '', '');
     let inputEmail = inputCreation('input', 'email', 'email', '', '', 'form-control', '', '');
     let textArea = inputCreation('textarea', 'text', 'textarea', '', '', 'form-control', '', '');
