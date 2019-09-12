@@ -68,3 +68,19 @@ localStorage.setItem("DEATH", "Except for death");
 localStorage.getItem("DEATH");
 
 
+
+
+
+const example = function(param){
+return test(param);
+
+
+}
+
+function test(testParam){
+
+alert(testParam);    
+}
+
+
+example("HELLO");
