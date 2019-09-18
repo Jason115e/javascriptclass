@@ -1,0 +1,100 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    background-image:url("https://images.unsplash.com/photo-1494376877685-d3d2559d4f82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
+    transition:2s font-size ease-in-out;
+    transition:2s background ease-in-out;
+    transition:3s all ease-in-out;
+   font-size: 1em;
+
+    color:white;
+}
+
+.scarry{
+
+    background-image:url("https://images.unsplash.com/photo-1484608577325-c7540cc6794d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
+   
+}
+
+.freddy{
+
+
+    background-image:url("https://gamespot1.cbsistatic.com/uploads/scale_super/1578/15789737/3449152-freddy-dek.jpg");
+    
+
+
+   
+}
+
+
+.chucky{
+
+
+
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YWw-O6o8AMVmY15aH3iLd2WDeuBMiPWhTINH2Pf81bSoaXyi");
+    
+    
+}
+
+.batman{
+
+
+    background-image:url(" http://getwallpapers.com/wallpaper/full/7/4/a/18853.jpg");
+    
+   
+}
+
+.normalbg{
+    background-image:url("https://images.unsplash.com/photo-1437680041790-b7ed7b5a4950?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+
+}
+
+.kayne {
+
+    background-image:url("https://pixelz.cc/wp-content/uploads/2017/08/kanye-west-uhd-4k-wallpaper.jpg");
+
+
+}
+
+.lilnas {
+
+    background-image:url("https://miro.medium.com/max/2560/0*ri7FX4F5ELmvjkNu");
+
+
+}
+
+.pennywise{
+
+    background-image:url("https://images7.alphacoders.com/868/thumb-1920-868807.jpg");
+    
+    
+
+}
+
+
+
+.btn {
+
+    background:rgba(175, 175, 175, 0.226);
+    transition:1s all ease-in-out;
+    margin-bottom:5px;
+    color:white;
+    font-size: 2em;
+  
+}
+
+.btn:nth-last-child(2){
+    background:rgba(184, 43, 43, 0.452);
+
+}
+
+
+.btn:hover {
+    border:2px solid white;
+    color:white;
+}
