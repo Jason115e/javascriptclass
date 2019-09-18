@@ -50,59 +50,95 @@
 // }
 
 
-// let practiceOutside = practiceScope();
+// // let practiceOutside = practiceScope();
 
 
 
 
-let container = document.getElementById("container");
-let dogArea = document.createElement("img");
+// // let container = document.getElementById("container");
+// // let dogArea = document.createElement("img");
 
 
 
 
-class AboutMe {
-    constructor(name, age, petName, petBreed){
+// // class AboutMe {
+// //     constructor(name, age, petName, petBreed){
 
-this.name = name;
-this.age =  age;
-this.petName = petName;
-this.petBreed = petBreed;
+// // this.name = name;
+// // this.age =  age;
+// // this.petName = petName;
+// // this.petBreed = petBreed;
 
-    }
-
-
-
-
-}
-
-const jason = new AboutMe("Jason", 32, "Mickey", "chihuahua");
-
-
-
-AboutMe.prototype{
-console.log(this.petBreed);
-
-
-}
+// //     }
 
 
 
 
+// // }
 
-function playWithApi(){
-
-
-
-const url = `https://dog.ceo/api/breed/${this.petBreed}/images/random`;
-fetch(url);
-console.log(url);
+// // const jason = new AboutMe("Jason", 32, "Mickey", "chihuahua");
 
 
-container.appendChild(dogArea);
-dogArea.setAttribute("src", url);
+
+// // AboutMe.prototype{
+// // console.log(this.petBreed);
 
 
-}
+// // }
 
-playWithApi();
+
+
+
+
+// // function playWithApi(){
+
+
+
+// // const url = `https://dog.ceo/api/breed/${this.petBreed}/images/random`;
+// // fetch(url);
+// // console.log(url);
+
+
+// // container.appendChild(dogArea);
+// // dogArea.setAttribute("src", url);
+
+
+// // }
+
+// // playWithApi();
+
+
+
+
+
+// //slightly more complicated example using same structure
+// function queryWithParams() {
+//     //How can we dynamically get queryCategory and query?
+
+//     let container = document.getElementById("container");
+// let dogArea = document.createElement("img");
+
+    
+
+// const url = "https://dog.ceo/api/breed/chihuahua/images";
+// fetch(url);
+// console.log(url);
+
+// container.appendChild(dogArea);
+
+
+
+
+// dogArea.setAttribute("src", url);
+
+
+//   }
+
+
+
+
+
+
+
+//   queryWithParams("chihuahua")
+
