@@ -1,11 +1,4 @@
 body {
-<<<<<<< HEAD
-    width:100%;
-    background: rgb(12, 88, 150);
-    font-family: 'Raleway', sans-serif;
-
-
-=======
     height: 100vh;
     display: flex;
     align-items: center;
@@ -26,7 +19,6 @@ body {
 
     background-image:url("https://images.unsplash.com/photo-1484608577325-c7540cc6794d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
     background-size: cover;
->>>>>>> final
 }
 
 .freddy{
@@ -36,82 +28,6 @@ body {
     
     background-size: cover;
 
-<<<<<<< HEAD
-
-.inputform {
-
-
-    margin: auto;
-    width:75vw;
-    text-align: center;
-    color: white;
-   
-    font-size: 1.5em;
-   
-
-}
-
-input {
-    width: 100%;
-    border-radius: 8px;
-    text-align: center;
-    
-}
-
-textarea{
-    margin-top:10px;
-   
-}
-
-button {
-    padding:0px 15px;
-    -webkit-appearance: none;
-    background:white;
-    margin-top: 10px;
-    border-radius: 10px;
-    color: rgb(12, 88, 150);
-    transition:background 250ms ease-in-out;
-
-}
-
-button:hover {
-    background: rgb(12, 88, 150);
-    color: white;
-    
-    transition:background 250ms ease-in-out;
-    
-}
-
-
-body{
-    height:100vh;
-    display: flex;
-  
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    text-align: center;
-    flex-direction: row;
-    background-attachment: fixed;
-}
-
-#startButton{
-    overflow:hidden;
-    width:50%;
-    height: 20%;
-    border:2px solid white;
-    font-size: 2em;
-
-    
-    
-}
-
-
-.hidden {
-    
-    
-    display:none;
-=======
    
 }
 
@@ -184,5 +100,4 @@ body{
 .btn:hover {
     border:2px solid white;
     color:white;
->>>>>>> final
 }
