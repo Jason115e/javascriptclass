@@ -111,8 +111,8 @@ function transitionSlide1(){
 
 function slide3Question(){
 
-  body.innerText = "THANKS FOR PLAYING, ALSO I KNOW YOU GUYS HAD PIZZA ";
-  timer = setTimeout(slide3Question, 5000);
+  body.innerText = "THANKS FOR PLAYING, ALSO I KNOW YOU GUYS HAD PIZZA, SO FOR THAT BACK YOU GO!! ";
+  timer = setTimeout(delayAlert, 5000);
 
 
 
