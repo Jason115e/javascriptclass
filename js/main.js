@@ -13,7 +13,7 @@ let timer;
 
 function endNow() {
   let getName = prompt("Are you sure you wish to cancel, if so please enter your name?");
-  body.innerText = `SORRY ${getName.toUpperCase()}, YOU ARE TOO FAR IN, BACK YOU GO!!!`;
+  body.innerText = `SORRY ${getName.toUpperCase()}, THERE IS NO WAY OUT!!!`;
   body.style.fontSize = "2em";
   timer = setTimeout(delayAlert, 5000);
 }
@@ -34,7 +34,7 @@ function slide1() {
   let button2 = document.createElement("button");
   let button3 = document.createElement("button");
   body.innerText = "WHO HAS A SWEATER AND GETS YOU WHILE YOU SLEEP ";
-  body.style.fontSize = "2.5em";
+  body.style.fontSize = "1.5em";
   body.appendChild(button1);
   body.appendChild(button2);
   body.appendChild(button3);
@@ -71,7 +71,7 @@ function slide2() {
   let button4 = document.createElement("button");
   let button5 = document.createElement("button");
   let button6 = document.createElement("button");
-  body.style.fontSize = "1.5em";
+  body.style.fontSize = "1em";
   button4.innerText = "KANYE WEST";
   button5.innerText = "LIL NAS X";
   button6.innerText = "PENNYWISE";
@@ -91,7 +91,7 @@ function slide2() {
     body.innerText = "SORRY, YOU ARE WRONG. BACK YOU GO";
     body.setAttribute("class", "lilnas");
     body.style.color="red";
-    timer = setTimeout(delayAlert, 10000);
+    timer = setTimeout(delayAlert, 8000);
   })
   button6.addEventListener('click', function () {
     body.innerText = "CORRECT";
@@ -103,9 +103,17 @@ function slide2() {
 
 function transitionSlide1(){
 
-  body.innerText = "NOW TRY AND GET A GOOD NIGHTS REST";
-  timer = setTimeout(slide3, 5000);
+  body.innerText = "CORRECT";
+  timer = setTimeout(slide3Question, 3000);
 
 
 }
 
+function slide3Question(){
+
+  body.innerText = "THANKS FOR PLAYING, ALSO I KNOW YOU GUYS HAD PIZZA ";
+  timer = setTimeout(slide3Question, 5000);
+
+
+
+}
